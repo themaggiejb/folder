@@ -135,6 +135,34 @@ tw-passage[tags~="start"] {
   background-attachment: fixed;
   z-index: 1;
 }
+
+tw-passage[tags~="question"] {
+  background-image: 		 url('https://themaggiejb.github.io/folder/images/question.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+tw-passage[tags~="pills"] {
+  background-image: 		 url('https://themaggiejb.github.io/folder/images/pills.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+tw-passage[tags~="talk"] {
+  background-image: 		 url('https://themaggiejb.github.io/folder/images/uncanny.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
 tw-passage[tags~="kidney"] {
   background-image: url('https://themaggiejb.github.io/folder/images/kidney.png');
   background-size: cover;
@@ -211,7 +239,7 @@ img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="start" color="blue"></tw-tag><tw-tag name="stomach" color="orange"></tw-tag><tw-tag name="teeth" color="blue"></tw-tag><tw-tag name="brain" color="yellow"></tw-tag><tw-tag name="lung" color="green"></tw-tag><tw-tag name="kidney" color="purple"></tw-tag><tw-tag name="heart" color="red"></tw-tag><tw-tag name="hover" color="blue"></tw-tag><tw-passagedata pid="1" name="start" tags="start hover" position="750,175" size="100,100">
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="start" color="blue"></tw-tag><tw-tag name="stomach" color="orange"></tw-tag><tw-tag name="teeth" color="blue"></tw-tag><tw-tag name="brain" color="yellow"></tw-tag><tw-tag name="lung" color="green"></tw-tag><tw-tag name="kidney" color="purple"></tw-tag><tw-tag name="heart" color="red"></tw-tag><tw-tag name="hover" color="blue"></tw-tag><tw-tag name="question" color="green"></tw-tag><tw-tag name="pills" color="blue"></tw-tag><tw-tag name="talk" color="yellow"></tw-tag><tw-passagedata pid="1" name="start" tags="start hover" position="750,175" size="100,100">
 (set: $visitedOrgans to (a:))
 (set: $allOrgans to (a: &quot;heart&quot;, &quot;lung&quot;, &quot;stomach&quot;, &quot;brain&quot;, &quot;kidney&quot;, &quot;teeth&quot;))
 
@@ -333,19 +361,19 @@ img {
   [[&lt;img src= &quot;https://themaggiejb.github.io/folder/images/question.png&quot; alt= &quot;question&quot;&gt;-&gt;DepressionChoice]]
   [[&lt;img src= &quot;https://themaggiejb.github.io/folder/images/pills.png&quot; alt= &quot;pills&quot;&gt;-&gt;AddictionChoice]]
   (stop:)
-]</tw-passagedata><tw-passagedata pid="10" name="AbuseChoice" tags="" position="1325,875" size="100,100">(set: $abuseScore to it + 1)
+]</tw-passagedata><tw-passagedata pid="10" name="AbuseChoice" tags="talk" position="1325,875" size="100,100">(set: $abuseScore to it + 1)
 (set: $anomalySize to it + 30)
-(text-style:&quot;fade-in-out&quot;)[The woman suddenly takes the anamoly and abuses it ad the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+(bg: red)[The woman suddenly takes the anamoly and abuses it ad the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
 
 [[Return-&gt;body]]
-</tw-passagedata><tw-passagedata pid="11" name="DepressionChoice" tags="" position="1450,875" size="100,100">(set: $depressionScore to it + 1)
+</tw-passagedata><tw-passagedata pid="11" name="DepressionChoice" tags="question" position="1450,875" size="100,100">(set: $depressionScore to it + 1)
 (set: $anomalySize to it + 30)
-(text-style:&quot;fade-in-out&quot;)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
+(bg: red)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
 
 
-[[Return-&gt;body]]</tw-passagedata><tw-passagedata pid="12" name="AddictionChoice" tags="" position="1575,875" size="100,100">(set: $addictionScore to it + 1)
+[[Return-&gt;body]]</tw-passagedata><tw-passagedata pid="12" name="AddictionChoice" tags="pills" position="1575,875" size="100,100">(set: $addictionScore to it + 1)
 (set: $anomalySize to it + 30)
-(text-style:&quot;fade-in-out&quot;)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+(bg: red)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
 
 
 [[Return-&gt;body]]</tw-passagedata><tw-passagedata pid="13" name="DetermineEnding" tags="" position="725,925" size="100,100">(if: $correctChoices is $totalScenarios)[
@@ -362,7 +390,7 @@ img {
 
 [[Restart-&gt;start]]</tw-passagedata><tw-passagedata pid="16" name="AddictionEnding" tags="" position="575,1050" size="100,100">Sadly the addiction has taken over your life. Instead of confronting the problem it was only worsened. Maybe next time you can escape this life...
 
-[[Restart-&gt;start]]</tw-passagedata><tw-passagedata pid="17" name="Talk" tags="" position="275,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
+[[Restart-&gt;start]]</tw-passagedata><tw-passagedata pid="17" name="Talk" tags="talk" position="275,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
 (set: $depressionScore to it + 1)
   (set: $anomalySize to it +30)
   (goto: &quot;DepressionChoice&quot;)
@@ -421,7 +449,7 @@ img {
 (set: $correctChoices to it + 1)
   (set: $anomalySize to 0)
   (goto: &quot;CorrectChoice&quot;)
-]</tw-passagedata><tw-passagedata pid="18" name="Pills" tags="" position="150,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
+]</tw-passagedata><tw-passagedata pid="18" name="Pills" tags="pills" position="150,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
 (set: $depressionScore to it + 1)
   (set: $anomalySize to it +30)
   (goto: &quot;DepressionChoice&quot;)
@@ -480,7 +508,7 @@ img {
 (set: $abuseScore to it + 1)
   (set: $anomalySize to it +30)
   (goto: &quot;AbuseChoice&quot;)
-]</tw-passagedata><tw-passagedata pid="19" name="Question" tags="" position="25,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
+]</tw-passagedata><tw-passagedata pid="19" name="Question" tags="question" position="25,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
   (set: $correctChoices to it + 1)
   (set: $anomalySize to 0)
   (goto: &quot;CorrectChoice&quot;)
