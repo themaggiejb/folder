@@ -127,15 +127,6 @@ tw-passage[tags~="start"] {
   z-index: 1;
 }
 
-tw-passage[tags~="start"] {
-  background-image: 		 url('https://themaggiejb.github.io/folder/images/body.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: 1;
-}
-
 tw-passage[tags~="question"] {
   background-image: 		 url('https://themaggiejb.github.io/folder/images/question.png');
   background-size: cover;
@@ -183,6 +174,51 @@ tw-passage[tags~="kidney"] {
 
 [tags~="brain"] {
   background-image: url('https://themaggiejb.github.io/folder/images/brain.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+[tags~="AE"] {
+  background-image: url('https://themaggiejb.github.io/folder/images/AnomalyBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+[tags~="ADE"] {
+  background-image: url('https://themaggiejb.github.io/folder/images/AddictionBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+[tags~="DE"] {
+  background-image: url('https://themaggiejb.github.io/folder/images/DepressionBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+[tags~="ABE"] {
+  background-image: url('https://themaggiejb.github.io/folder/images/AbuseBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+[tags~="CE"] {
+  background-image: url('https://themaggiejb.github.io/folder/images/CongratsBG.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -239,14 +275,18 @@ img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="start" color="blue"></tw-tag><tw-tag name="stomach" color="orange"></tw-tag><tw-tag name="teeth" color="blue"></tw-tag><tw-tag name="brain" color="yellow"></tw-tag><tw-tag name="lung" color="green"></tw-tag><tw-tag name="kidney" color="purple"></tw-tag><tw-tag name="heart" color="red"></tw-tag><tw-tag name="hover" color="blue"></tw-tag><tw-tag name="question" color="green"></tw-tag><tw-tag name="pills" color="blue"></tw-tag><tw-tag name="talk" color="yellow"></tw-tag><tw-passagedata pid="1" name="start" tags="start hover" position="750,175" size="100,100">
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="start" color="blue"></tw-tag><tw-tag name="stomach" color="orange"></tw-tag><tw-tag name="teeth" color="blue"></tw-tag><tw-tag name="brain" color="yellow"></tw-tag><tw-tag name="lung" color="green"></tw-tag><tw-tag name="kidney" color="purple"></tw-tag><tw-tag name="heart" color="red"></tw-tag><tw-tag name="hover" color="blue"></tw-tag><tw-tag name="question" color="green"></tw-tag><tw-tag name="pills" color="blue"></tw-tag><tw-tag name="talk" color="yellow"></tw-tag><tw-tag name="startup" color="yellow"></tw-tag><tw-tag name="AE" color="green"></tw-tag><tw-tag name="ADE" color="blue"></tw-tag><tw-tag name="DE" color="green"></tw-tag><tw-tag name="ABE" color="blue"></tw-tag><tw-tag name="CE" color="green"></tw-tag><tw-passagedata pid="1" name="start" tags="start hover" position="750,175" size="100,100">
 (set: $visitedOrgans to (a:))
 (set: $allOrgans to (a: &quot;heart&quot;, &quot;lung&quot;, &quot;stomach&quot;, &quot;brain&quot;, &quot;kidney&quot;, &quot;teeth&quot;))
 
 (text-size: 5)[(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;smear&quot;)[(text-style:&quot;fidget&quot;)[Detection]]]
 
 (text-style:&quot;italic&quot;)[//(text-style:&quot;upside-down&quot;)[(text-style:&quot;mirror&quot;)+(text-indent: 20)[Select the word [[body]] to inspect]]//]
-(align:&quot;&lt;==&quot;)+(box:&quot;=======XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX===============================================================&quot;)[(text-size: 2)+(text-indent: 15) [&#39;&#39;You must(text-colour:yellow)[ find the anamoly] and determine the cause and solution&#39;&#39;]]
+(align:&quot;&lt;==&quot;)+(box:&quot;=======XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX===============================================================&quot;)[(text-size: 2)+(text-indent: 15) [&#39;&#39;You must(text-colour:yellow)[ find the anamoly] and determine the cause and solution. 
+
+
+
+There is always a second opinion.&#39;&#39;]]
 
 </tw-passagedata><tw-passagedata pid="2" name="lung" tags="lung" position="750,400" size="100,100">&lt;video class= &quot;video-background&quot; autoplay loop muted playsinline&gt;
   &lt;source src=&quot;https://themaggiejb.github.io/folder/images/lungs.mp4&quot; type=&quot;video/mp4&quot;&gt;
@@ -278,7 +318,7 @@ img {
 (if: $randomCheck is 1)[
   [[&lt;img src=&quot;https://themaggiejb.github.io/folder/images/lung_addiction.png&quot;&gt;-&gt;KidneyAnomaly]]
 ](else-if: $randomCheck is 2)[
-  [[&lt;img src=&#39;themaggjejb.github.io/folder/images/stomach_depression.png&#39; class=&quot;anomaly-img&quot;&gt;-&gt;KidneyAnomalyy]]
+  [[&lt;img src=&quot;https://themaggiejb.github.io/folder/images/stomach_depression.png&quot; class=&quot;anomaly-img&quot;&gt;-&gt;KidneyAnomalyy]]
 ](else:)[
   Everything seems normal here.
   
@@ -313,12 +353,12 @@ img {
   [[Continue exploring-&gt;body]]
 ]
 </tw-passagedata><tw-passagedata pid="6" name="stomach" tags="stomach" position="525,675" size="100,100">&lt;video class=&quot;video-background&quot; autoplay loop muted playsinline&gt;
-&lt;source src=&quot;https://themaggjejb.github.io/folder/images/stomach.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;source src=&quot;https://themaggiejb.github.io/folder/images/stomach.mp4&quot; type=&quot;video/mp4&quot;&gt;
 &lt;/video&gt;
 
 (set: $visitedOrgans to it + (a: &quot;stomach&quot;))
 
-(text-style:&quot;underline&quot;)[(bg:black)[The heart beats steadily. The beat seems to get louder..]]
+(text-style:&quot;underline&quot;)[(bg:black)[Acidic bubbles digesting your food as the juices fill up the stomach.]]
 
 (set: $randomCheck to (random: 1, 3))
 
@@ -349,324 +389,184 @@ img {
   Everything seems normal here.
   
   [[Continue exploring-&gt;body]]
-]</tw-passagedata><tw-passagedata pid="8" name="plugin" tags="" position="1375,500" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="anomalyevent" tags="" position="1450,675" size="100,100">(live: 1s)[
-  (text-style: &quot;fade-in&quot;)(text-style:&quot;smear&quot;)[The anomaly oozes... laughing as you ponder its purpose.]
-  (stop:)
+]</tw-passagedata><tw-passagedata pid="8" name="AbuseChoiceK" tags="talk" position="1325,875" size="100,100">(set: $abuseScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
 ]
 
-(live: 3s)[
-  (text-style: &quot;fade-in&quot;)[How will you fix it?]
-  
-  [[&lt;img src= &quot;https://themaggiejb.github.io/folder/images/uncanny.png&quot; alt= &quot;uncanny&quot;&gt; -&gt;AbuseChoice]]
-  [[&lt;img src= &quot;https://themaggiejb.github.io/folder/images/question.png&quot; alt= &quot;question&quot;&gt;-&gt;DepressionChoice]]
-  [[&lt;img src= &quot;https://themaggiejb.github.io/folder/images/pills.png&quot; alt= &quot;pills&quot;&gt;-&gt;AddictionChoice]]
-  (stop:)
-]</tw-passagedata><tw-passagedata pid="10" name="AbuseChoice" tags="talk" position="1325,875" size="100,100">(set: $abuseScore to it + 1)
-(set: $anomalySize to it + 30)
-(bg: red)[The woman suddenly takes the anamoly and abuses it ad the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+(else:)[
+(bg: magenta)[The woman suddenly takes the anamoly and abuses it and the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[A sudden wave of nausea overcomes you, as your body begins to swell. The anomaly grows  to $anomalySize ooz, please continue on carefully.]]]
+
 
 [[Return-&gt;body]]
-</tw-passagedata><tw-passagedata pid="11" name="DepressionChoice" tags="question" position="1450,875" size="100,100">(set: $depressionScore to it + 1)
-(set: $anomalySize to it + 30)
-(bg: red)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
+
+]</tw-passagedata><tw-passagedata pid="9" name="DepressionChoiceK" tags="question" position="1450,875" size="100,100">(set: $depressionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    [The anomaly has grown too large...]
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
 
 
-[[Return-&gt;body]]</tw-passagedata><tw-passagedata pid="12" name="AddictionChoice" tags="pills" position="1575,875" size="100,100">(set: $addictionScore to it + 1)
-(set: $anomalySize to it + 30)
-(bg: red)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[A sudden wave of fatigue overcomes you, as your kidneys begin to fail. The anomaly grows to $anomalySize ooz, please continue on carefully.]]]
 
 
-[[Return-&gt;body]]</tw-passagedata><tw-passagedata pid="13" name="DetermineEnding" tags="" position="725,925" size="100,100">(if: $correctChoices is $totalScenarios)[
-  (goto: &quot;CorrectChoice&quot;)
+[[Return-&gt;body]]
+
+]
+</tw-passagedata><tw-passagedata pid="10" name="AddictionChoiceK" tags="pills" position="1575,875" size="100,100">(set: $addictionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[A sudden wave of confusion overcomes you, your breath growing shorter as a sharp pain comes from your abdomen. The anomaly grows to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="11" name="DetermineEnding" tags="" position="725,925" size="100,100">(if: $correctChoices is $totalScenarios)[
+  (goto: &quot;CorrectEnding&quot;)
 ](else-if: $abuseScore &gt; $depressionScore and $abuseScore &gt; $addictionScore)[
   (goto: &quot;AbuseEnding&quot;)
 ](else-if: $depressionScore &gt; $abuseScore and $depressionScore &gt; $addictionScore)[
   (goto: &quot;DepressionEnding&quot;)
 ](else:)[
   (goto: &quot;AddictionEnding&quot;)
-]</tw-passagedata><tw-passagedata pid="14" name="DepressionEnding" tags="" position="750,1050" size="100,100">Sadly the depression has taken over your life. Instead of confronting the problem it was only worsened. Maybe next time you can escape this life...
+]</tw-passagedata><tw-passagedata pid="12" name="DepressionEnding" tags="DE" position="700,1100" size="100,100">(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[By questioning the anomalies instead of curing them, you allowed them to grow. Unfortunately you have ignored your problems and could not cure them, forcing you to succumb to the depression. 
 
-[[Restart-&gt;start]]</tw-passagedata><tw-passagedata pid="15" name="AbuseEnding" tags="" position="925,1050" size="100,100">Sadly the abuse has taken over your life. Instead of confronting the problem it was only worsened. Maybe next time you can escape this life...
+Maybe next time you can overcome your mind...]]
 
-[[Restart-&gt;start]]</tw-passagedata><tw-passagedata pid="16" name="AddictionEnding" tags="" position="575,1050" size="100,100">Sadly the addiction has taken over your life. Instead of confronting the problem it was only worsened. Maybe next time you can escape this life...
+[[Restart-&gt;start]]</tw-passagedata><tw-passagedata pid="13" name="AbuseEnding" tags="ABE" position="850,1100" size="100,100">(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[While you trusted her opinion, she has betrayed your trust; unfortunately, leading you down a path of abuse. By ignoring your problems, the anomaly grew and so did her hatred. 
 
-[[Restart-&gt;start]]</tw-passagedata><tw-passagedata pid="17" name="Talk" tags="talk" position="275,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;HeartAnomalyy&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;KidneyAnomaly&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;KidneyAnomalyy&quot;)[
- (set: $addictionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AddictionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;LungAnomaly&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;LungAnomalyy&quot;)[
- (set: $addictionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AddictionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;StomachAnomaly&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;StomachAnomalyy&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;BrainAnomaly&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;BrainAnomalyy&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;TeethAnomaly&quot;)[
- (set: $addictionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AddictionChoice&quot;)
-]
-(else: $currentAnomaly to &quot;TeethAnomalyy&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]</tw-passagedata><tw-passagedata pid="18" name="Pills" tags="pills" position="150,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;HeartAnomalyy&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;KidneyAnomaly&quot;)[
- (set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;KidneyAnomalyy&quot;)[
- (set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;LungAnomaly&quot;)[
- (set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;LungAnomalyy&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;StomachAnomaly&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;StomachAnomalyy&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;BrainAnomaly&quot;)[
-(set: $depressionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;DepressionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;BrainAnomaly&quot;)[
-(set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;TeethAnomaly&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else: $currentAnomaly to &quot;TeethAnomalyy&quot;)[
-(set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]</tw-passagedata><tw-passagedata pid="19" name="Question" tags="question" position="25,650" size="100,100">(if: $currentAnomaly to &quot;HeartAnomaly&quot;)[
-  (set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;HeartAnomalyy&quot;)[
- (set: $addictionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AddictionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;KidneyAnomaly&quot;)[
- (set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;KidneyAnomalyy&quot;)[
- (set: $addictionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AddictionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;LungAnomaly&quot;)[
- (set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;LungAnomalyy&quot;)[
- (set: $addictionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AddictionChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;StomachAnomaly&quot;)[
- (set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;StomachAnomalyy&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;BrainAnomaly&quot;)[
-(set: $correctChoices to it + 1)
-  (set: $anomalySize to 0)
-  (goto: &quot;CorrectChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;BrainAnomalyy&quot;)[
-(set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]
-(else-if: $currentAnomaly to &quot;TeethAnomaly&quot;)[
-(set: $addictionScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AddictionChoice&quot;)
-]
-(else: $currentAnomaly to &quot;TeethAnomalyy&quot;)[
-(set: $abuseScore to it + 1)
-  (set: $anomalySize to it +30)
-  (goto: &quot;AbuseChoice&quot;)
-]</tw-passagedata><tw-passagedata pid="20" name="CorrectChoice" tags="" position="800,1350" size="100,100">(set: $correctChoices to it + 1)
+Maybe next time you will choose you....]]
+
+
+(link: &quot;Restart Game&quot;)[(restart:)]
+</tw-passagedata><tw-passagedata pid="14" name="AddictionEnding" tags="ADE" position="550,1100" size="100,100">(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[Sadly the addiction has taken over your life. By choosing the pills instead of healing, the anomaly grew. Instead of confronting the problem it was only worsened. 
+
+Maybe next time you can escape this life...]]
+
+(link: &quot;Restart Game&quot;)[(restart:)]
+</tw-passagedata><tw-passagedata pid="15" name="CorrectChoice" tags="CE" position="725,1375" size="100,100">(set: $correctChoices to it + 1)
 (set: $anomalySize to 0)
-(text-style: &quot;fade-in&quot;)[You addressed the problem. The anomaly fades away.]
+(bg: red)[You addressed the problem. The anomaly fades away.]
 
-[[Return-&gt;body]]</tw-passagedata><tw-passagedata pid="21" name="KidneyAnomalyy" tags="kidney" position="525,475" size="100,100">(set: $currentAnomaly to &quot;KidneyAnomalyy&quot;)
+[[Return-&gt;body]]</tw-passagedata><tw-passagedata pid="16" name="KidneyAnomalyy" tags="kidney" position="525,475" size="100,100">(set: $currentAnomaly to &quot;KidneyAnomalyy&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be inflamation in the kidney. If the problem goes unsolved it will deterioate the kidney further. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be inflamation in the kidney. If the problem goes unsolved it will deterioate the kidney further. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]
-</tw-passagedata><tw-passagedata pid="22" name="KidneyAnomaly" tags="kidney" position="400,475" size="100,100">(set: $currentAnomaly to &quot;KidneyAnomaly&quot;)
+[[Depression; Question further-&gt;DepressionChoiceK]]
+[[Addiction; Take pills-&gt;CorrectChoice]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceK]]
+</tw-passagedata><tw-passagedata pid="17" name="KidneyAnomaly" tags="kidney" position="400,475" size="100,100">(set: $currentAnomaly to &quot;KidneyAnomaly&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be some internal bleeding around the kidney. If the problem goes unsolved it will deterioate the kidney further. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be some internal bleeding around the kidney. If the problem goes unsolved it will deterioate the kidney further. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]
-</tw-passagedata><tw-passagedata pid="23" name="LungAnomaly" tags="lung" position="650,525" size="100,100">(set: $currentAnomaly to &quot;LungAnomaly&quot;)
+[[Depression; Question further-&gt;DepressionChoiceK]]
+[[Addiction; Take Pills-&gt;AddictionChoiceK]]
+[[Abuse; Talk to someone-&gt;CorrectChoice]]
+</tw-passagedata><tw-passagedata pid="18" name="LungAnomaly" tags="lung" position="650,525" size="100,100">(set: $currentAnomaly to &quot;LungAnomaly&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a fractured rib in the lungs. If the problem goes unsolved it will pierce the lung. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a fractured rib in the lungs. If the problem goes unsolved it will pierce the lung. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]</tw-passagedata><tw-passagedata pid="24" name="LungAnomalyy" tags="lung" position="800,550" size="100,100">(set: $currentAnomaly to &quot;LungAnomalyy&quot;)
+[[Depression; Question further-&gt;DepressionChoiceL]]
+[[Addiction; Take Pills-&gt;AddictionChoiceL]]
+[[Abuse; Talk to someone-&gt;CorrectChoice]]</tw-passagedata><tw-passagedata pid="19" name="LungAnomalyy" tags="lung" position="800,550" size="100,100">(set: $currentAnomaly to &quot;LungAnomalyy&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be mucus lining the lungs. If the problem goes unsolved it will cause black lung. How will you fix it?]
-
-
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]</tw-passagedata><tw-passagedata pid="25" name="HeartAnomalyy" tags="heart" position="1050,475" size="100,100">(set: $currentAnomaly to &quot;HeartAnomalyy&quot;)
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be mucus lining the lungs. If the problem goes unsolved it will cause black lung. How was this caused? And how will you fix it?]
+[[Depression; Question further-&gt;DepressionChoiceL]]
+[[Addiction; Take pills-&gt;CorrectChoice]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceL]]</tw-passagedata><tw-passagedata pid="20" name="HeartAnomalyy" tags="heart" position="1050,475" size="100,100">(set: $currentAnomaly to &quot;HeartAnomalyy&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+ (bg:black)[There seems to be a clot in the heart. If the problem goes unsolved it will block the blood from pumping into the heart. How will you fix it?]
+(text-style:&quot;underline&quot;)+ (bg:black)[There seems to be a clot in the heart. If the problem goes unsolved it will block the blood from pumping into the heart. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]</tw-passagedata><tw-passagedata pid="26" name="HeartAnomaly" tags="heart" position="925,525" size="100,100">(set: $currentAnomaly to &quot;HeartAnomaly&quot;)
+[[Depression; Question further-&gt;DepressionChoiceH]]
+[[Addiction; Take pills-&gt;CorrectChoice]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceH]]</tw-passagedata><tw-passagedata pid="21" name="HeartAnomaly" tags="heart" position="925,525" size="100,100">(set: $currentAnomaly to &quot;HeartAnomaly&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;) + (bg:black)[There seems to be high blood pressure. If the problem goes unsolved it will deterioate the heart. How will you fix it?]
-
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]
-</tw-passagedata><tw-passagedata pid="27" name="BrainAnomalyy" tags="brain" position="1075,800" size="100,100">(set: $currentAnomaly to &quot;BrainAnomalyy&quot;)
+(text-style:&quot;underline&quot;) + (bg:black)[There seems to be high blood pressure. If the problem goes unsolved it will deterioate the heart. How was this caused? And how will you fix it?]
+[[Depression; Question further-&gt;CorrectChoice]]
+[[Addiction; Take pills-&gt;AddictionChoiceH]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceH]]
+</tw-passagedata><tw-passagedata pid="22" name="BrainAnomalyy" tags="brain" position="1075,800" size="100,100">(set: $currentAnomaly to &quot;BrainAnomalyy&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a bruised skull. If the problem goes unsolved it will cause complicity. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a bruised skull. If the problem goes unsolved it will cause complicity. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]</tw-passagedata><tw-passagedata pid="28" name="TeethAnomalyy" tags="teeth" position="800,800" size="100,100">(set: $currentAnomaly to &quot;TeethAnomalyy&quot;)
+[[Depression; Question further-&gt;DepressionChoiceB]]
+[[Addiction; Take Pills-&gt;AddictionChoiceB]]
+[[Abuse; Talk to someone-&gt;CorrectChoice]]</tw-passagedata><tw-passagedata pid="23" name="TeethAnomalyy" tags="teeth" position="800,800" size="100,100">(set: $currentAnomaly to &quot;TeethAnomalyy&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a missing tooth. If the problem goes unsolved it will cause insecurity. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a missing tooth. If the problem goes unsolved it will cause insecurity. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]</tw-passagedata><tw-passagedata pid="29" name="BrainAnomaly" tags="brain" position="950,800" size="100,100">(set: $currentAnomaly to &quot;BrainAnomaly&quot;)
+[[Depression; Question further-&gt;DepressionChoiceT]]
+[[Addiction; Take Pills-&gt;AddictionChoiceT]]
+[[Abuse; Talk to someone-&gt;CorrectChoice]]</tw-passagedata><tw-passagedata pid="24" name="BrainAnomaly" tags="brain" position="950,800" size="100,100">(set: $currentAnomaly to &quot;BrainAnomaly&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be eyes appearing out of nowehere. If the problem goes unsolved it will deterioate the mind. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be eyes appearing out of nowehere. If the problem goes unsolved it will deterioate the mind. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]
-</tw-passagedata><tw-passagedata pid="30" name="TeethAnomaly" tags="teeth" position="675,800" size="100,100">(set: $currentAnomaly to &quot;TeethAnomaly&quot;)
+[[Depression; Question further-&gt;CorrectChoice]]
+[[Addiction; Take Pills-&gt;AddictionChoiceB]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceB]]
+</tw-passagedata><tw-passagedata pid="25" name="TeethAnomaly" tags="teeth" position="675,800" size="100,100">(set: $currentAnomaly to &quot;TeethAnomaly&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be black spots in the gums. If the problem goes unsolved it will deterioate the teeth. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be black spots in the gums. If the problem goes unsolved it will deterioate the teeth. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]
-</tw-passagedata><tw-passagedata pid="31" name="StomachAnomalyy" tags="stomach" position="550,800" size="100,100">(set: $currentAnomaly to &quot;StomachAnomalyy&quot;)
+[[Depression; Question further-&gt;DepressionChoiceT]]
+[[Addiction; Take Pills-&gt;CorrectChoice]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceT]]
+</tw-passagedata><tw-passagedata pid="26" name="StomachAnomalyy" tags="stomach" position="550,800" size="100,100">(set: $currentAnomaly to &quot;StomachAnomalyy&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a clot in the stomach. If the problem goes unsolved it will deterioate. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be a clot in the stomach. If the problem goes unsolved it will deterioate. How was this caused? And how will you fix it?]
 
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]</tw-passagedata><tw-passagedata pid="32" name="StomachAnomaly" tags="stomach" position="425,800" size="100,100">(set: $currentAnomaly to &quot;StomachAnomaly&quot;)
+[[Depression; Question further-&gt;CorrectChoice]]
+[[Addiction; Take Pills-&gt;AddictionChoiceS]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceS]]</tw-passagedata><tw-passagedata pid="27" name="StomachAnomaly" tags="stomach" position="425,800" size="100,100">(set: $currentAnomaly to &quot;StomachAnomaly&quot;)
 (set: $totalScenarios to it + 1)
 
-(text-style:&quot;underline&quot;)+(bg:black)[There seems to be an empty stomach. If the problem goes unsolved it will cause an eating disorder. How will you fix it?]
+(text-style:&quot;underline&quot;)+(bg:black)[There seems to be an empty stomach. If the problem goes unsolved it will cause an eating disorder. How was this caused? And how will you fix it?]
 
-[[Question-&gt;Question]]
-[[Take Pills-&gt;Pills]]
-[[Talk to someone-&gt;Talk]]
+[[Depression; Question further-&gt;CorrectChoice]]
+[[Addiction; Take pills-&gt;AddictionChoiceS]]
+[[Abuse; Talk to someone-&gt;AbuseChoiceS]]
 
-</tw-passagedata><tw-passagedata pid="33" name="CorrectEnding" tags="" position="1050,1250" size="100,100">Congrats! You adressed the problem in each scenario and escaped a life of torment.
+</tw-passagedata><tw-passagedata pid="28" name="CorrectEnding" tags="CE" position="975,1100" size="100,100">(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[Congratulations! 
 
-[[Return-&gt;start]]</tw-passagedata><tw-passagedata pid="34" name="body" tags="start" position="625,300" size="100,100">[You stand before the body, searching for anomalies.]
+You adressed the problem in each scenario and chose to cure them instead of ignoring the anomalies. This has led you to a life of healing and comfort, a journey that is not over but is still continuing. ]]
+
+(link: &quot;Restart Game&quot;)[(restart:)]
+</tw-passagedata><tw-passagedata pid="29" name="body" tags="start" position="625,300" size="100,100">[You remember seeing on the news anomalies found in the body can be disturbed. Only by extinguishing the anomaly will it go away. However, if disturbed, the anomaly will grow, and anywhere past 50 ooz is fatal.]
+
 [Which organ would you like to inspect?]
 
 [[Explore the kidneys-&gt;kidney]]
@@ -678,7 +578,273 @@ img {
 
 (if: $visitedOrgans contains all of $allOrgans)[
   [[Something has changed...-&gt;DetermineEnding]]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="30" name="AbuseChoiceL" tags="talk" position="1325,1000" size="100,100">(set: $abuseScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The woman suddenly takes the anamoly and abuses it and the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[Your lungs are now bruised from the pain, and you can almost feel your ribs crack as the anomaly now grows to $anomalySize ooz. Please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+
+]</tw-passagedata><tw-passagedata pid="31" name="AbuseChoiceH" tags="talk" position="1325,1125" size="100,100">(set: $abuseScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The woman suddenly takes the anamoly and abuses it and the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[The toll from the abuse starts to get to you, as you feel a searing pain in your heart. The anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+
+]</tw-passagedata><tw-passagedata pid="32" name="AddictionChoiceT" tags="pills" position="1575,1375" size="100,100">(set: $addictionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[What looks like black mold begins to spread over your gums as the anomaly grows now to $anomalySize ooz. Please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="33" name="AddictionChoiceH" tags="pills" position="1575,1125" size="100,100">(set: $addictionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[The clot in your heart worsens as the anomaly spreads like an infection. It now grows to $anomalySize ooz, Please continue on carefully.]]
+]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="34" name="DepressionChoiceL" tags="question" position="1450,1000" size="100,100">(set: $depressionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[Your lungs ache as it becomes hard to breathe. You wonder if the anomaly is effecting you, as it now grows to $anomalySize ooz. Please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="35" name="AddictionChoiceL" tags="pills" position="1575,1000" size="100,100">(set: $addictionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[Your lungs start to slow down their breathing. As confusion settles in, the anomaly now grows to $anomalySize ooz. Please continue on carefully.]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="36" name="DepressionChoiceH" tags="question" position="1450,1125" size="100,100">(set: $depressionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[Your stress is untaken care of and your blood pressure rises, fueling the anomaly. It swells, growing to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="37" name="DepressionChoiceS" tags="question" position="1450,1250" size="100,100">(set: $depressionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[A sudden wave of nausea overcomes you, as your body begins to swell. The anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="38" name="AddictionChoiceS" tags="pills" position="1575,1250" size="100,100">(set: $addictionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[A sudden wave of nausea overcomes you, as your stomach shifts and turns. The anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="39" name="AbuseChoiceS" tags="talk" position="1325,1250" size="100,100">(set: $abuseScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The woman suddenly takes the anamoly and abuses it and the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[The lining of your stomach burns, as the gaseous acid bubbles and pops violently due to the dripping ooze. The anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+
+]</tw-passagedata><tw-passagedata pid="40" name="DepressionChoiceT" tags="question" position="1450,1375" size="100,100">(set: $depressionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[A sudden wave of nausea overcomes you, as your body begins to swell. The anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="41" name="AbuseChoiceT" tags="talk" position="1325,1375" size="100,100">(set: $abuseScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The woman suddenly takes the anamoly and abuses it and the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[The anomaly grows to $anomalySize ooz, shattering the teeth around it as it grows. Please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+
+]</tw-passagedata><tw-passagedata pid="42" name="DepressionChoiceB" tags="question" position="1450,1500" size="100,100">(set: $depressionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[You realize how pointless fighting the anamoly is. It will only grow...The isolation deepens and the anamoly contorts itself, appearing larger.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[Why can&#39;t you remember anything? Your entire head aches as the anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="43" name="AbuseChoiceB" tags="talk" position="1325,1500" size="100,100">(set: $abuseScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The woman suddenly takes the anamoly and abuses it and the anomaly oozes out of her hand. She only made it worse... The anamoly pulses.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[The anomaly bleeds through your skull, slipping through cracks and creating more along the way. The anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+
+]</tw-passagedata><tw-passagedata pid="44" name="AddictionChoiceB" tags="pills" position="1575,1500" size="100,100">(set: $addictionScore to it + 1)
+(set: $anomalySize to it + 10)
+
+(if: $anomalySize &gt;= 50)[
+    The anomaly has grown too large...
+    (goto: &quot;AnomalyEnding&quot;)
+]
+
+(else:)[
+(bg: magenta)[The pills numb everything. But why do you still feel it... The anomaly grows, pulsing as its slimey exterior drips.]
+
+
+
+[(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X====&quot;)[Control loosens from your grip as a growing pain swells in your brain. The anomaly grows now to $anomalySize ooz, please continue on carefully.]]]
+
+
+[[Return-&gt;body]]
+]</tw-passagedata><tw-passagedata pid="45" name="startup" tags="startup" position="1450,75" size="100,100"></tw-passagedata><tw-passagedata pid="46" name="AnomalyEnding" tags="AE" position="400,1100" size="100,100">(text-colour:magenta)[(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[The anomalies have reached the fatal limit the body can take. Instead of addressing the anomaly and curing it, you ignored it. By ignoring it the anamoly confidently grew, ready for its new home.
+
+Maybe next time you can cure them...]]
+
+(link: &quot;Restart Game&quot;)[(restart:)]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
